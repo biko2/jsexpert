@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "quokka.quokka-vscode",
+    "bungcip.better-toml",
+    "yoavbls.pretty-ts-errors",
+  ]
+}
+
