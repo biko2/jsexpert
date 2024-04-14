@@ -1,0 +1,14 @@
+{
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "extensions.ignoreRecommendations": false,
+  "workbench.colorTheme": "Default Dark Modern",
+  "eslint.options": {
+    "overrideConfigFile": ".eslintrc.js"
+  },
+  "quokka.suppressExpirationNotifications": true,
+}
