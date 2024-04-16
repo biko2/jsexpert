@@ -1,11 +1,10 @@
 {
   "recommendations": [
     "WallabyJs.quokka-vscode",
-    "bungcip.better-toml",
     "yoavbls.pretty-ts-errors",
-    "tht13.html-preview-vscode",
     "sketchbuch.vsc-quokka-statusbar",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "vitest.explorer"
   ],
   "unwantedRecommendations": [
     "ms-kubernetes-tools.vscode-kubernetes-tools",
