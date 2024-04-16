@@ -1,5 +1,5 @@
 
-if(typeof valor === "undefined") {
+if(true) {
   //--------- ⬇️ Modifica el código de abajo ⬇️ ------------//
   
   var valor = 1;
