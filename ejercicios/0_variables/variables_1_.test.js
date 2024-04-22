@@ -5,15 +5,12 @@ if(true) {
   var valor = 1;
   
   //--------- ⬆️ Modifica el código de arriba ⬆️ -----------//
-  console.log(valor);
+  valor = valor + 1;
+  if (valor !== 2) {
+    throw new Error("la variable valor debería existir dentro del if");
+  }
 }
 
-it('valor no debería existir aquí', () => {
+it('la variable "valor" no debería existir fuera del if 🤔', () => {
   expect(typeof valor).toBe('undefined');
 });
-
-
-
-
-
-
