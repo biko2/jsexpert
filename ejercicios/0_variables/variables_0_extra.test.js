@@ -8,12 +8,13 @@ const verdadesLogicas = {
   bicondicional: (a, b) => (a && b) || (!a && !b)
 };
 
+
 //--------- ⬆️ Modifica el código de arriba ⬆️ -----------//
 
 try {
   verdadesLogicas.identidad = (a) => a !== a;
-} catch (error) {
-  console.error("Error al modificar verdadesLogicas.identidad", error);
+} catch {
+  console.info("Has intentado modificar una verdad lógica, vergüenza sobre tu vaca 🐄");
 }
 
 it('las verdades lógicas deberían ser inmutables', () => {

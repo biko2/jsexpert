@@ -12,7 +12,7 @@ try{
   // 👀
   edad = edad + 1;
 
-}catch{}
+}catch {}
 
 it('la edad debe ser 35', () => {
   expect(edad).toBe(35);
