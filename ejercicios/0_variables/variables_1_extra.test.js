@@ -13,7 +13,6 @@ try {
     for (let i = 0; i < segundosAntesDeMirarLaCaja; i++) {
       //--------- ⬇️ Modifica el código de abajo ⬇️ ------------//
 
-
       //--------- ⬆️ Modifica el código de arriba ⬆️ -----------//
 
       if (gatoDeSchrodinger === undefined || gatoDeSchrodinger !== undefined) {
@@ -25,7 +24,7 @@ try {
   error = e;
 }
 
-it('la variable "valor" debería existir fuera del if debido al uso de var 🤔', () => {
+it('no debería haber errores y el gato de schrodinger debería tener uno de los valores de la caja', () => {
   expect(error).toBe(false);
   expect(caja).toContain(gatoDeSchrodinger);
 });
