@@ -1,31 +1,17 @@
+const valor1 = 10;
 
-const valores = [
-  1,
-  "1",
-  "one",
-  NaN,
-  true,
-  false,
-  "1º",
-  true,
-  '1',
-  undefined,
-  () => (1),
-]
+const valor2 = "10";
 
-let sumaDeUnos = 0;
+//--------- ⬇️ Modifica el código de abajo ⬇️ ------------//
 
-for (let i = 0; i < valores.length; i++) {
-  //--------- ⬇️ Modifica el código de abajo ⬇️ ------------//
-
-  if (valores[i] == 1) {
-    sumaDeUnos = sumaDeUnos + 1;
-  }
-
-  //--------- ⬆️ Modifica el código de arriba ⬆️ -----------//
+function transformarValor(valor) {
+  return valor;
 }
 
-it('El total de unos debería ser 1', () => {
-  expect(sumaDeUnos).toBe(1);
-})
+//--------- ⬆️ Modifica el código de arriba ⬆️ -----------//
 
+const resultado = valor1 + transformarValor(valor2);
+
+it("resultado debe ser 20", () => {
+  expect(resultado).toBe(20);
+});
