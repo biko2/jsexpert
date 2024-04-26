@@ -1,6 +1,6 @@
-let lista = [];
 
 //--------- ⬇️ Modifica el código de abajo ⬇️ ------------//
+let lista = [];
 
 
 

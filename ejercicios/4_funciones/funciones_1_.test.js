@@ -1,6 +1,6 @@
 
-let miFuncion;
 //--------- ⬇️ Modifica el código de abajo ⬇️ ------------//
+let miFuncion;
 
 
 //--------- ⬆️ Modifica el código de arriba ⬆️ -----------//
