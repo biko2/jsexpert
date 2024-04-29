@@ -1,10 +1,9 @@
 function publicarAnuncio(coche) {
   //--------- ⬇️ Modifica el código de abajo ⬇️ ------------//
-
   //--------- ⬆️ Modifica el código de arriba ⬆️ -----------//
 
   console.log(
-    `Vendo un ${modelo} ${marca} del año ${año} con matrícula ${matricula}, de color ${color}, con ${kilometraje} km a tan solo ${precio} €. ¡No te pierdas la oferta!`
+    `Vendo un ${modelo} ${marca} del año ${año} con matrícula ${matricula}, de color ${color}, con ${kilometraje} km a tan solo ${precio} €. ${mensaje}`
   );
 }
 
@@ -13,7 +12,7 @@ describe("Desestructuring", () => {
     const coche = {
       marca: "Ford",
       modelo: "Focus",
-      año: undefined,
+      año: 2018,
       matricula: "1234ABC",
       color: "rojo",
       kilometraje: 10000,
