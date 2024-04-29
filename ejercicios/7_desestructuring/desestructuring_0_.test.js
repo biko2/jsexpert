@@ -8,7 +8,7 @@ function portalTravel(orangePortal, bluePortal) {
 }
 
 describe("Desestructuring", () => {
-it("ATLAS debería poder atravesar el portal naranja", () => {
+it("ATLAS al cruzar por el portal naranaja, debería acabar en el portal azul", () => {
   const [orangePortal, bluePortal] = portalTravel("ATLAS", "");
   expect(orangePortal).toBe("");
   expect(bluePortal).toBe("ATLAS");

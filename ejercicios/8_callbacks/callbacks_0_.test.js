@@ -11,7 +11,7 @@ function avanzarSegundo() {
 
 const reloj = {
   avanzar: function () {
-    console.log("El tiempo pasa");
+    console.log("El tiempo pasa como una flecha, la fruta como una uva pasa.");
   },
 };
 
