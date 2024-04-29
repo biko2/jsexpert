@@ -1,14 +1,14 @@
 const peliculas = [
-  'El Padrino', //0
-  'El Padrino II', //1
-  'El Padrino III', //2
-  'El caballero oscuro', //3
-  '12 hombres sin piedad', //4
-  'La lista de Schindler', //5
-  'Pulp Fiction', //6
-  'El señor de los anillos: El retorno del rey', //7
-  'La vida es bella', //8
-  'El club de la lucha', //9
+  'El Padrino',
+  'El Padrino II',
+  'El Padrino III',
+  'El caballero oscuro',
+  '12 hombres sin piedad',
+  'La lista de Schindler',
+  'Pulp Fiction',
+  'El señor de los anillos: El retorno del rey',
+  'La vida es bella',
+  'El club de la lucha',
 ]
 
 const encontrarPelicula = (titulo) => {
@@ -38,7 +38,7 @@ describe('Array functions', () => {
     const pelicula = encontrarPelicula('')
     expect(pelicula).toBe('El Padrino')
   })
-  it('debería encontrar la película "El caballero oscuro"', () => {
+  it('no debería encontrar ninguna película', () => {
     const pelicula = encontrarPelicula()
     expect(pelicula).toBe(undefined)
   })
