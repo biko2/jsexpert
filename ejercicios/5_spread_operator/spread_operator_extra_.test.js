@@ -19,7 +19,7 @@ const persona = {
 };
 addProperties(persona, propiedades);
 
-describe("Ejercicio 5 extra", () => {
+describe("Spread Operator", () => {
   it("la función addProperties debería devolver un objeto con las propiedades que ya tenía la persona, añadiendo las nuevas propiedades suministradas en el array", () => {
     expect(addProperties(persona, propiedades)).toEqual({
       alias: "Jhonny",

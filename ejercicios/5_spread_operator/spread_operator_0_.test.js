@@ -10,7 +10,7 @@ const saludo = saludar(
   "Miguel"
 );
 
-describe("Ejercicio 5", () => {
+describe("Spread Operator", () => {
   it("el método saludar debería retornar todos los nombres concatenados", () => {
     expect(saludo).toBe("Buenos días Julio, Alfonso, Pedro, Ramón, Miguel");
   });

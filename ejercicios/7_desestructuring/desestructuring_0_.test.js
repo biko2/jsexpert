@@ -7,7 +7,7 @@ function portalTravel(orangePortal, bluePortal) {
   return [newOrangePortal, newBluePortal];
 }
 
-describe("Ejercicio 6", () => {
+describe("Desestructuring", () => {
 it("ATLAS debería poder atravesar el portal naranja", () => {
   const [orangePortal, bluePortal] = portalTravel("ATLAS", "");
   expect(orangePortal).toBe("");

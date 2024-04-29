@@ -6,7 +6,7 @@ function fusion(objeto1, objeto2) {
   return result;
 }
 
-describe("Ejercicio 2", () => {
+describe("Spread Operator", () => {
   it("la función fusion debería devolver un objeto, que contiene las propiedades de ambos proporcionados", () => {
     const goku = { nombre: "Goku", poder: 9001, edad: 42 };
     const vegeta = { nombre: "Vegeta", raza: "Saiyan", poder: 9000 };

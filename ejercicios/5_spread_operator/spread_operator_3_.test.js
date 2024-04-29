@@ -21,7 +21,7 @@ function filtrarInformacion(objeto) {
   };
 }
 
-describe("Ejercicio 3", () => {
+describe("Spread Operator", () => {
   it("nuestra función de filtrarInformación debería eliminar aquellas propiedades que esten vacías", () => {
     expect(filtrarInformacion(Maria)).toEqual({
       nombre: "Maria",
