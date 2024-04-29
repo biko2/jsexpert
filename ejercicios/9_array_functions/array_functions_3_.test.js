@@ -28,7 +28,7 @@ const getFactura = (personas) => {
 }
 
 describe('Array functions', () => {
-  it('en un evento se sirve una consumición a cada persona según la edad', () => {
+  it('al llamar al método getFactura se debe obtener un array con la cuenta de cada usuario', () => {
     const personas = [diana, tom, jhonny]
     const cuentas = getFactura(personas)
     expect(cuentas).toEqual([
