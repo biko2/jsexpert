@@ -27,58 +27,10 @@ export const medievalCity = {
   },
 }
 
-export function calcularConsumoDiarioDeAlimentos(city) {
-  const totalFoodConsumption = city.poblacion.reduce((total, person) => {
-    return total + person.cantidad * person.consumo
-  }, 0)
-  return { consumoTotalAlimentos: totalFoodConsumption }
-}
+export function calcularConsumoDiarioDeAlimentos(city) {}
 
-export function calcularProduccionDiaria(city) {
-  const dailyProduction = {
-    madera: 0,
-    hierro: 0,
-    oro: 0,
-    alimentos: 0,
-  }
+export function calcularProduccionDiaria(city) {}
 
-  for (const resourceType in dailyProduction) {
-    city.poblacion.forEach((person) => {
-      dailyProduction[resourceType] +=
-        city.produccion[resourceType][person.tipo] * person.cantidad
-    })
-  }
+export function simularInvierno(city, days) {}
 
-  return dailyProduction
-}
-
-export function simularInvierno(city, days) {
-  const dailyProduction = calcularProduccionDiaria(city)
-  const dailyConsumption =
-    calcularConsumoDiarioDeAlimentos(city).consumoTotalAlimentos
-  const initialResources = { ...city.recursos }
-  const resourcesAfterWinter = { ...initialResources }
-
-  for (const resource in dailyProduction) {
-    resourcesAfterWinter[resource] += (dailyProduction[resource] * days) / 2
-  }
-  resourcesAfterWinter.alimentos -= dailyConsumption * days
-
-  const survivalDays = calcularDiasDeSupervivencia({
-    recursos: resourcesAfterWinter,
-    poblacion: city.poblacion,
-    produccion: city.produccion,
-  })
-
-  return {
-    diasSupervivencia: survivalDays,
-    recursosRestantes: resourcesAfterWinter,
-  }
-}
-
-export function calcularDiasDeSupervivencia(city) {
-  const dailyConsumption =
-    calcularConsumoDiarioDeAlimentos(city).consumoTotalAlimentos
-  const availableFood = city.recursos.alimentos
-  return Math.floor(availableFood / dailyConsumption)
-}
+export function calcularDiasDeSupervivencia(city) {}
