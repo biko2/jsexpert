@@ -5,7 +5,6 @@
     "**/.DS_Store": true
   },
   "extensions.ignoreRecommendations": false,
-  "workbench.colorTheme": "Default Light Modern",
   "eslint.options": {
     "overrideConfigFile": ".eslintrc.js"
   },
